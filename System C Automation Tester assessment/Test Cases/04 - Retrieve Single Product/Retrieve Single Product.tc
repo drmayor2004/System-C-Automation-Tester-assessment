@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Retrieve Single Product</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>82861a86-219b-49e5-90fb-bec4ea96a2bd</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a22c7619-e880-46a9-87f6-9ae54b744aa5</id>
+      <masked>false</masked>
+      <name>tc</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bdcd9060-1009-4159-a4b3-ee721ba61117</id>
+      <masked>false</masked>
+      <name>testCases</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>aad1b856-2ab3-4614-8b47-c3ded92ec566</id>
+      <masked>false</masked>
+      <name>expectedResponseCode</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fa5f2fa0-3228-4c4b-bdc4-bcdef5e9d2ed</id>
+      <masked>false</masked>
+      <name>enpointURL</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3461851e-a812-498a-9d18-2d2ee95db50b</id>
+      <masked>false</masked>
+      <name>itemId</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "D2B11DACA56647DF9EFE0B5B01A77BFD",
+  "keywordClasses": [
+    {
+      "name": "com.automationapi.reportgenerator.CreateProduct",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "FFB25A751A1A6F32977EC7E0236C7607",
+  "keywordClasses": [
+    {
+      "name": "com.automationapi.utils.CellExcelFormatters",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Retrieve All Products</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>10b6130e-32a3-457d-8148-b70a322548c0</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c84bf073-c7b6-43c4-9a79-279696411bb5</id>
+      <masked>false</masked>
+      <name>getURL</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d695e838-d265-4fe3-a586-558a5bc67e10</id>
+      <masked>false</masked>
+      <name>expectedResponseCode</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>46a38b81-0da4-4484-9ac3-3844731705da</id>
+      <masked>false</masked>
+      <name>testCases</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2dcd63f1-2e76-4ad3-9f7c-69563b34630c</id>
+      <masked>false</masked>
+      <name>tc</name>
+   </variable>
+</TestCaseEntity>

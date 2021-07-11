@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "574B7884B2CB02D187C6C2B2862B773E",
+  "keywordClasses": [
+    {
+      "name": "com.automationapi.testcasecounter.ProductCatalogTestcaseCounter",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

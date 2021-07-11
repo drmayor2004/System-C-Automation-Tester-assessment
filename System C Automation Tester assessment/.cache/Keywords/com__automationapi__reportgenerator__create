@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "33D7490050EA44C1767421166323A551",
+  "keywordClasses": [
+    {
+      "name": "com.automationapi.reportgenerator.create",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
