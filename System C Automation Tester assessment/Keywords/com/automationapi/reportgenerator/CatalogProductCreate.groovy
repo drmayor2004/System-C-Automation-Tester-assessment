@@ -7,14 +7,14 @@ import com.automationapi.utils.CellExcelFormatters
 import com.kms.katalon.keyword.excel.ExcelKeywords
 import internal.GlobalVariable
 
-public class CreateProduct {
+public class CatalogProductCreate {
 	public String createProductExcelFile() {
 		LocalDateTime date = LocalDateTime.now()
 		DateTimeFormatter formatters = DateTimeFormatter.ofPattern("yyyy-MM-dd_HHmmss")
 		String dateStr = date.format(formatters).toString()
-		String fileName = "Product Catalog - "
+		String fileName = "Q3 - Product Catalog - "
 		String dir = "F:\\"
-		GlobalVariable.excelReport = System.getProperty("user.dir") + File.separator + "ExcelReports" + File.separator + "Create Product" + File.separator + fileName + dateStr + ".xlsx"
+		GlobalVariable.excelReport = System.getProperty("user.dir") + File.separator + "ExcelReports" + File.separator + "Q3 Catalog Product" + File.separator + fileName + dateStr + ".xlsx"
 		println(GlobalVariable.excelReport)
 		//Create excel file
 		ExcelKeywords.createExcelFile(GlobalVariable.excelReport)
@@ -25,7 +25,7 @@ public class CreateProduct {
 		//Create Authorisation Workbook
 		Workbook workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelReport)
 		//Create  Excelsheet
-		ExcelKeywords.createExcelSheets(workbook01, ['Create Product' , 'Retrieve - All Products', 'Retrieve - Single Product', 'Remove Product'])
+		ExcelKeywords.createExcelSheets(workbook01, ['Create Product'])
 		ExcelKeywords.saveWorkbook(GlobalVariable.excelReport, workbook01)
 		workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelReport)
 
@@ -39,7 +39,7 @@ public class CreateProduct {
 		}
 
 		//verify excel sheets are created
-		String[]expectedListSheet = ["Create Product", "Retrieve - All Products", "Retrieve - Single Product", 'Remove Product']
+		String[]expectedListSheet = ["Create Product"]
 		workbook01 = ExcelKeywords.getWorkbook(GlobalVariable.excelReport)
 		assert ExcelKeywords.getSheetNames(workbook01).equals(expectedListSheet)
 

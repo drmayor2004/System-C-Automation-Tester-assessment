@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Create Product</name>
+   <name>New Request</name>
    <tag></tag>
-   <elementGuidId>507e79b6-f9cf-409a-8fc5-0d88186fe341</elementGuidId>
+   <elementGuidId>32635cbb-6ada-45ae-bcb5-6fd4bf52c0d4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;id\&quot;: \&quot;${id}\&quot;,\n  \&quot;name\&quot;: \&quot;${name}\&quot;,\n  \&quot;description\&quot;: \&quot;${description}\&quot;,\n  \&quot;price\&quot;: ${price},\n  \&quot;itemCount\&quot;: ${itemCount},\n  \&quot;isActive\&quot;: ${isActive},\n  \&quot;CreatedDateTime\&quot;: \&quot;${createdDateTime}\&quot;,\n  \&quot;ModifiedDateTime\&quot;: \&quot;${modifiedDateTime}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;id\&quot;: \&quot;string\&quot;,\n  \&quot;name\&quot;: \&quot;sdsdstrhghghghdfdfing\&quot;,\n  \&quot;description\&quot;: \&quot;gfgfgfgf\&quot;,\n  \&quot;price\&quot;: 0,\n  \&quot;itemCount\&quot;: 0,\n  \&quot;isActive\&quot;: true,\n  \&quot;CreatedDateTime\&quot;: \&quot;2021-07-11T11:54:32.404Z\&quot;,\n  \&quot;ModifiedDateTime\&quot;: \&quot;2021-07-11T11:54:32.404Z\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -33,7 +33,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${url}</restUrl>
+   <restUrl>https://qarecruitment.azurewebsites.net/v1/product/</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -57,6 +57,7 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 
-assertThat(response.getResponseText()).contains('Katalon Test Project')</verificationScript>
+WS.verifyElementPropertyValue(response, 'issues[0].fields.project.key', 'KTP')
+WS.verifyElementPropertyValue(response, 'name', &quot;getProduct4919&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

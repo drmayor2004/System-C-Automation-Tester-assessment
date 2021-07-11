@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Q3 - Catalog Product - Create</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>d01b5d2e-09e7-4837-ba40-0bbcdb130486</dataFileGUID>
+   <dataSourceUrl>F:\GitHub\System-C-Automation-Tester-assessment\System C Automation Tester assessment\Data Driven Files\Test Data.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>Create Product - Post</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
